@@ -84,7 +84,7 @@ ModelAdapter adapter;
                 models.add(new Model(array.optString(i)));
             }
 
-            adapter.loadMoreItems(models , list);
+            adapter.loadMoreItems(models , models.isEmpty(), list);
 
         }catch (Exception e){
             e.printStackTrace();

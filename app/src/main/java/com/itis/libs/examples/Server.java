@@ -71,12 +71,9 @@ private static void generate(int genSize){
             int index = chooser.nextInt(sz--);
             String item = tempSrc.remove(index);
 
-            if(item == null){
-                System.out.println("`item` is null");
-            }
-            else if(item.isEmpty()){
-                System.out.println("`item` is empty string");
-            }else {
+
+
+            if(item != null && !item.isEmpty()){
                 dataSource.put(item);
             }
 
@@ -87,13 +84,10 @@ private static void generate(int genSize){
 
 
 public static String call(int offset){
-System.out.println("Beginning server call: offset = "+offset+" and server has: "+dataSource.length()+" items.");
     if(offset >= dataSource.length()){
         boolean choice = chooser.nextBoolean();
         if(choice) {
-            System.out.println("GENERATING MORE ITEMS");
             generate(40 * ATOMIC_SERVE_RATE);
-            System.out.println("GENERATED MORE ITEMS");
         }
     }
 
@@ -111,7 +105,6 @@ System.out.println("Beginning server call: offset = "+offset+" and server has: "
 
     }
 
-    System.out.println("SENDING TO CLIENT--> "+outputArray.toString());
 
 
 

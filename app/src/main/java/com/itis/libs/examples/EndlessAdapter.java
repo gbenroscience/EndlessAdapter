@@ -1,14 +1,14 @@
-package com.itis.endlessloader.adapters;
+package com.itis.libs.examples;
 
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 
+import androidx.annotation.Nullable;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import androidx.annotation.Nullable;
 
 /**
  * Defines a simple generic BaseAdapter for an android {@link AdapterView}
@@ -53,7 +53,7 @@ public abstract class EndlessAdapter<T> extends BaseAdapter {
 
     /**
      * SUBCLASSES MUST ALWAYS CALL THIS METHOD AT THE BOTTOM OF THEIR
-     * {@link EndlessAdapter#getView(int, View, ViewGroup)} IMPLEMENTATION.
+     * {@link com.itis.endlessloader.adapters.EndlessAdapter#getView(int, View, ViewGroup)} IMPLEMENTATION.
      *
      * @param position    The position of the data of the view to be generated in the adapter
      * @param convertView The view to be generated
@@ -183,7 +183,7 @@ public abstract class EndlessAdapter<T> extends BaseAdapter {
     public abstract void onScrollAwayFromBottom(int currentIndex);
 
     /**
-     * The network calls that updated the {@link EndlessAdapter}
+     * The network calls that updated the {@link com.itis.endlessloader.adapters.EndlessAdapter}
      *
      * @param moreItemsReceived If true, the adapter received updates.
      */

@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.gbenroscience:EndlessAdapter:0.1.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/EndlessAdapter-0.1.1.aar/90711c64e2819bbdb38071fb21641332/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/EndlessAdapter-0.1.1.aar/90711c64e2819bbdb38071fb21641332/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/EndlessAdapter-0.1.1.aar/f45fd7434d10469d25c858ec52f162f5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/EndlessAdapter-0.1.1.aar/f45fd7434d10469d25c858ec52f162f5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/EndlessAdapter-0.1.1.aar/f45fd7434d10469d25c858ec52f162f5/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

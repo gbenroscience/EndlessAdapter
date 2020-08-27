@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Libs.iml" filepath="$PROJECT_DIR$/Libs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/endlessloader/endlessloader.iml" filepath="$PROJECT_DIR$/endlessloader/endlessloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libs.iml" filepath="$PROJECT_DIR$/Libs.iml" group="Libs" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Libs/app" />
+      <module fileurl="file://$PROJECT_DIR$/endlessloader/endlessloader.iml" filepath="$PROJECT_DIR$/endlessloader/endlessloader.iml" group="Libs/endlessloader" />
     </modules>
   </component>
 </project>

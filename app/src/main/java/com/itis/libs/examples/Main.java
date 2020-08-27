@@ -33,14 +33,10 @@ public class Main extends AppCompatActivity {
         adapter = new ModelAdapter() {
             @Override
             public void onScrollToBottom(int bottomIndex, boolean moreItemsCouldBeAvailable) {
-                System.out.println("Scrolled to list bottom");
                 if (moreItemsCouldBeAvailable) {
-                    System.out.println("Mock Server could have more items...making server call");
                     makeYourServerCallForMoreItems();
                 } else {
-                    System.out.println("Mock Server had no items the last time we queried it");
                     if (loadMore.getVisibility() != View.VISIBLE) {
-                        System.out.println("...We better enable button for manual calls by user.");
                         loadMore.setVisibility(View.VISIBLE);
                     }
                 }
@@ -48,15 +44,12 @@ public class Main extends AppCompatActivity {
 
             @Override
             public void onScrollAwayFromBottom(int currentIndex) {
-                System.out.println("Scrolling away from list bottom");
                 loadMore.setVisibility(View.GONE);
             }
 
             @Override
             public void onFinishedLoading(boolean moreItemsReceived) {
-                System.out.println("onFinishedLoading called");
                 if (!moreItemsReceived) {
-                    System.out.println("... and nothing was received");
                     loadMore.setVisibility(View.VISIBLE);
                 }
             }
@@ -91,7 +84,7 @@ public class Main extends AppCompatActivity {
                 models.add(new Model(array.optString(i)));
             }
 
-            adapter.loadMoreItems(models, list);
+            adapter.loadMoreItems(models, models.isEmpty(), list);
 
         } catch (Exception e) {
             e.printStackTrace();

@@ -21,6 +21,17 @@ public abstract class EndlessAdapter<T> extends BaseAdapter {
 
     protected List<T> items = new ArrayList<>();
     /**
+     *
+     * Try to obtain the value for this field from your datasource.
+     * Set it to true if the datasource reports that data has been exhausted.
+     * Set it to false otherwise.
+     * If you have no control over the remote server, then set it to true when the
+     * API responds with no data.
+     *
+     * The most correct value for this field is obtained when the datasource responds with data but can still tell you authoritatively
+     * whether or not data will be available if another such call for data is made again.
+     *
+     *
      * If true, the last call that was made for data via {@link EndlessAdapter#loadMoreItems(List, boolean, AdapterView)}
      * returned data from the server.
      * <p>
